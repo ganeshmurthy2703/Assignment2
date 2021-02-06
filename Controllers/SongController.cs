@@ -23,10 +23,16 @@ namespace Assignment2.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Song2()
         {
             return View();
         }
+
+        public IActionResult Song3()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
