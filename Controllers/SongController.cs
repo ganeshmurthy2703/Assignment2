@@ -7,6 +7,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
+
+
+//controller for Songs
 namespace Assignment2.Controllers
 {
     public class SongController : Controller
@@ -18,16 +21,19 @@ namespace Assignment2.Controllers
             _logger = logger;
         }
 
+        //Method to return Song1 view
         public IActionResult Song1()
         {
             return View();
         }
 
+        //Method to return Song2 view
         public IActionResult Song2()
         {
             return View();
         }
 
+        //Method to return Song3 view
         public IActionResult Song3()
         {
             return View();

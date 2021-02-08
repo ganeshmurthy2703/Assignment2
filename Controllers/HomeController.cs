@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
+// controller for all the Home views. 
 namespace Assignment2.Controllers
 {
     public class HomeController : Controller
@@ -18,15 +19,24 @@ namespace Assignment2.Controllers
             _logger = logger;
         }
 
+        //method to return the view Index
         public IActionResult Index()
         {
             return View();
         }
 
+        //method to return the view Privacy
         public IActionResult Privacy()
         {
             return View();
         }
+
+        //method to return the view About
+        public IActionResult About()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
